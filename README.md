@@ -1,12 +1,20 @@
-基于 LoRa(LLCC68) 实现 STM32F407 的 OTA 远程程序升级
-项目来源：学习B站尚硅谷STM32 OTA-BootLoader零基础教程
-视频地址：(https://www.bilibili.com/video/BV11C65BDEJx/?spm_id_from=333.337.search-card.all.click)
-原版硬件：STM32F103C8T6 + STM32F103ZET6
-本项目修改适配：STM32F103C8T6 + STM32F407VET6
-主要改动点：
-1. STM32F407时钟树、Flash扇区分区重新配置
-2. F4芯片底层Flash擦写驱动重写
-3.双芯片通信参数适配F4外设时序
-4. BootLoader地址映射、固件偏移量适配F4存储空间
-仅用于个人学习、求职作品集展示，不进行任何商业售卖与盈利行为
+# STM32F407 LoRa OTA 远程升级 (基于LLCC68)
+
+## 📖 项目来源
+本项目是基于 B站 [尚硅谷STM32 OTA-BootLoader零基础教程] 进行的二次开发与硬件适配。
+*   **原版教程视频**：[点击跳转至B站视频](https://www.bilibili.com/video/BV11C65BDEJx/?spm_id_from=333.337.search-card.all.click)
+*   **原版硬件**：STM32F103C8T6 + STM32F103ZET6
+*   **本项目适配硬件**：STM32F103C8T6 + **STM32F407VET6**
+
+## 🔧 主要改动与适配点
+本项目针对 F4 系列芯片进行了深度移植和优化，主要改动包括：
+
+1.  **硬件底层重构**：重新配置 STM32F407 的时钟树，并根据 F4 的 Flash 扇区划分机制重写了 Flash 擦写底层驱动。
+2.  **通信时序适配**：重新调整双芯片通信参数，使其严格适配 F4 外设时序。
+3.  **BootLoader 地址映射**：重新计算并适配了 BootLoader 地址映射与固件偏移量，以适应 F4 的存储空间。
+
+---
+
+## ⚠️ 声明
+本项目**仅用于个人学习、求职作品集展示**，**不进行任何商业售卖与盈利行为**。 
 
