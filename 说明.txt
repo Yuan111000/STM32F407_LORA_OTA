@@ -1,0 +1,6 @@
+F103-UP :   stm32F103C8T6作为上位机
+F407-A2:    stm32F103C8T6用串口接受的程序
+
+F407-A:             STM32F407原本的程序
+F407-B2:           STM32F407的bootloader程序
+F407-B2-reset:  STM32F407的恢复出厂设置程序

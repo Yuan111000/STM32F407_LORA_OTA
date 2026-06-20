@@ -1,0 +1,45 @@
+# Keil MDK-ARM 编译中间文件
+*.o
+*.crf
+*.d
+*.iex
+*.htm
+*.dep
+*.map
+*.lst
+*.sct
+*.axf
+*.hex
+*.bin
+*.elf
+*.lib
+*.lnp
+*.build_log.htm
+*.bak
+*.plg
+
+# 编译输出目录
+**/MDK-ARM/F103_UP/
+**/MDK-ARM/F407_A/
+**/MDK-ARM/F407/
+**/MDK-ARM/F407_B2/
+**/MDK-ARM/F407_reset/
+
+# Keil 用户配置文件（含本地路径）
+*.uvguix.*
+*.uvoptx
+*.scvd
+*.dbgconf
+
+# Debug / RTE 目录
+**/DebugConfig/
+**/RTE/
+
+# IDE
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
