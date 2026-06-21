@@ -32,7 +32,12 @@ F407_A和F407_A-2中keil配置<img width="924" height="688" alt="image" src="htt
 F407_A相当于F407初始的代码，F407_A-2是F407升级后的代码。
 测试方法：
 打开F103_UP：
-首先，把main函数中这段代码的注释去掉<img width="1276" height="503" alt="image" src="https://github.com/user-attachments/assets/259cf211-c806-4104-9408-4630bedf6020" />，烧录到F103
+首先，把main函数中这段代码的注释去掉<img width="1276" height="503" alt="image" src="https://github.com/user-attachments/assets/259cf211-c806-4104-9408-4630bedf6020" />，
+然后在App_update.c的App_Update_Init（）函数中，把if判断语句加上注释，<img width="802" height="448" alt="image" src="https://github.com/user-attachments/assets/9718c3e3-650c-4eaa-9b1e-6d39659493a5" />
+之后就可以烧录到F103了，这时需要把串口与F103连接起来，串口工具中会打印相关信息，我们现在就可以通过串口把F407要升级的程序存储在F103中，在串口工具的发送框中，输入  start:(bin文件大小)，比如F407_A-2编译生成的bin文件大小为15804，那么就是输入 start:15804  ,如何可以产生bin文件呢，打开keil中魔术棒，在USER中配置<img width="930" height="701" alt="image" src="https://github.com/user-attachments/assets/98a639cd-7753-4448-8b3e-da117f3ead00" />
+在User Commond中输入  E:\keil5\ARM\ARMCC\bin\fromelf --bin -o "$L@L.bin" "#L"  ，注意要输入自己路径。
+
+把F407_A,F407_B2,F407_B2-reset全烧录到F407开发板中
 
 
 学习中遇到的小问题：注意要让F103与F407的频率一致，比如都为72Mhz,不然会出现F407不响应的情况。
