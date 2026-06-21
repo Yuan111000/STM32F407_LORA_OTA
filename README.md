@@ -20,8 +20,14 @@
 
 
 
-详细内容
-用到的硬件:STM32F103C8T6,STM32F407VET6,两个大夏龙雀LoRa无线模块(DX-LR20-433M22SP),1个AT24C02,1个W25Q64,面包板,杜邦线,USB-TTL串口,任意烧录器
+
+用到的硬件:STM32F103C8T6,STM32F407VET6,两个大夏龙雀LoRa无线模块(DX-LR20-433M22SP),1个AT24C02,1个W25Q64,面包板,杜邦线,USB-TTL串口,任意烧录器。
+F407的FLASH分区：0x0800 0000-0x0800 7FFF 对应的BOOTLOADER程序，即F407_B2文件
+                0x0800 8000-0x0800 FFFF  对应的恢复出厂区域  ，F407_B2-reset文件
+                0x0800 1000-0x0801 FFFF  A程序（用户程序）区域 ，F407_A文件
+
+F407_B2中keil配置<img width="929" height="704" alt="image" src="https://github.com/user-attachments/assets/c3946f9b-9755-429e-b9b4-d9d9d96f9462" />
+
 
 学习中遇到的小问题：注意要让F103与F407的频率一致，比如都为72Mhz,不然会出现F407不响应的情况。
 
