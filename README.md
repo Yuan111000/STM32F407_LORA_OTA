@@ -24,7 +24,7 @@
 ### 1. Keil 工程配置说明
 *   `F407_B2` 中配置：<img width="929" height="704" alt="image" src="https://github.com/user-attachments/assets/c3946f9b-9755-429e-b9b4-d9d9d96f9462" />
 *   `F407_B2-reset` 中配置：<img width="939" height="699" alt="image" src="https://github.com/user-attachments/assets/67c3a81e-3ab9-4cf1-acec-43a039e66069" />
-*   `F407_A` 中配置：<img width="924" height="688" alt="image" src="https://github.com/user-attachments/assets/36deb705-95b8-473b-96fd-80be6e226840" />
+*   `F407_A和F407_A-2` 中配置：<img width="924" height="688" alt="image" src="https://github.com/user-attachments/assets/36deb705-95b8-473b-96fd-80be6e226840" />
 *   *(注：F407_A 相当于 F407 初始的代码，F407_A-2 为 F407 升级后的代码。)*
 
 ### 2. 测试方法
