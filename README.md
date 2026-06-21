@@ -22,7 +22,7 @@
 ## 🚀 测试方法说明
 
 ### 1. Keil 工程配置说明
-*   `F407_B2` 中配置：`img_width="92" height="94"`
+*   `F407_B2` 中配置：<img width="929" height="704" alt="image" src="https://github.com/user-attachments/assets/c3946f9b-9755-429e-b9b4-d9d9d96f9462" />
 *   `F407_B2-reset` 中配置：`img_width="93" height="69"`
 *   `F407_A` 中配置：`img_width="92" height="68"`
 *   *(注：F407_A 相当于 F407 初始的代码，F407_A-2 为 F407 升级后的代码。)*
