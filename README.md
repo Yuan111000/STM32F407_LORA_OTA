@@ -27,6 +27,12 @@ F407的FLASH分区：0x0800 0000-0x0800 7FFF 对应的BOOTLOADER程序，即F407
                 0x0800 1000-0x0801 FFFF  A程序（用户程序）区域 ，F407_A文件
 
 F407_B2中keil配置<img width="929" height="704" alt="image" src="https://github.com/user-attachments/assets/c3946f9b-9755-429e-b9b4-d9d9d96f9462" />
+F407_B2-reset中keil配置<img width="939" height="699" alt="image" src="https://github.com/user-attachments/assets/67c3a81e-3ab9-4cf1-acec-43a039e66069" />
+F407_A和F407_A-2中keil配置<img width="924" height="688" alt="image" src="https://github.com/user-attachments/assets/36deb705-95b8-473b-96fd-80be6e226840" />
+F407_A相当于F407初始的代码，F407_A-2是F407升级后的代码。
+测试方法：
+打开F103_UP：
+首先，把main函数中这段代码的注释去掉<img width="1276" height="503" alt="image" src="https://github.com/user-attachments/assets/259cf211-c806-4104-9408-4630bedf6020" />，烧录到F103
 
 
 学习中遇到的小问题：注意要让F103与F407的频率一致，比如都为72Mhz,不然会出现F407不响应的情况。
