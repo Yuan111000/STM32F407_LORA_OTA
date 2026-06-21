@@ -1,6 +1,5 @@
 # STM32F407 LoRa OTA 远程升级 (基于LLCC68)
 
-# STM32F407 LoRa OTA 远程升级 (基于LLCC68)
 
 ## 📖 项目来源
 本项目是基于 B站 [尚硅谷STM32 OTA-BootLoader零基础教程] 进行的二次开发与硬件适配。
