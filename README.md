@@ -19,7 +19,7 @@
 
 ---
 
-## 🚀 测试方法说明
+##  测试方法说明
 
 ### 1. Keil 工程配置说明
 *   `F407_B2` 中配置：<img width="929" height="704" alt="image" src="https://github.com/user-attachments/assets/c3946f9b-9755-429e-b9b4-d9d9d96f9462" />
@@ -27,7 +27,7 @@
 *   `F407_A` 中配置：<img width="924" height="688" alt="image" src="https://github.com/user-attachments/assets/36deb705-95b8-473b-96fd-80be6e226840" />
 *   *(注：F407_A 相当于 F407 初始的代码，F407_A-2 为 F407 升级后的代码。)*
 
-### 2. 测试代码修改步骤
+### 2. 测试方法
 打开 `f103_up` 文件：
 1.  首先，把 `main` 函数中这段代码的注释去掉。<img width="1276" height="503" alt="image" src="https://github.com/user-attachments/assets/259cf211-c806-4104-9408-4630bedf6020" />，
 2.  然后在 `App_update_Init()` 函数中，把 `if` 判断语句加上注释。<img width="802" height="448" alt="image" src="https://github.com/user-attachments/assets/9718c3e3-650c-4eaa-9b1e-6d39659493a5" />
